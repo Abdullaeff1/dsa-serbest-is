@@ -1,4 +1,4 @@
-# Müasir Data Strukturları və Alqoritmlər — Sərbəst İş (Mövzu 1–5)
+﻿# Müasir Data Strukturları və Alqoritmlər — Sərbəst İş (Mövzu 1–5)
 
 3 nəfərlik komanda layihəsi. Məqsəd: əsas data strukturlarını **özümüz implementasiya etmək**, sadə mini-tətbiqlər göstərmək və **eksperimental performans** müqayisəsi aparmaq.
 
@@ -83,6 +83,7 @@ Nəticələr `results/benchmark_results.txt` faylına yazılır.
 ## Sənədlər
 
 - Texniki hesabat: [docs/hesabat.md](docs/hesabat.md)
+- Word hesabat (benchmark + analiz): [docs/DSA_Serbest_Is_Hesabat.docx](docs/DSA_Serbest_Is_Hesabat.docx)
 - Təqdimat konturu: [docs/teqdimat_outline.md](docs/teqdimat_outline.md)
 
 ## İstinadlar
@@ -92,3 +93,4 @@ Nəticələr `results/benchmark_results.txt` faylına yazılır.
 3. Kurs sillabusu: *Müasir Data Strukturları və Alqoritmlər* (sərbəst iş mövzuları 1–5)
 
 > Qeyd: Digər qrupların repo strukturu yalnız ümumi yanaşma üçün nəzərdən keçirilib; kod və mini-tətbiqlər bu komandaya məxsusdur.
+
