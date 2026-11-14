@@ -1,0 +1,57 @@
+# Benchmark results
+# sizes=[100, 1000, 5000]
+# times are approximate (microseconds); machine-dependent
+
+## Array vs Dynamic Array
+size,structure,op,microseconds
+100,FixedArray,append,21.60
+100,DynamicArray,append,42.00
+100,DynamicArray,insert_middle,5.80
+100,DynamicArray,search,5.40
+1000,FixedArray,append,168.20
+1000,DynamicArray,append,199.20
+1000,DynamicArray,insert_middle,33.70
+1000,DynamicArray,search,45.30
+5000,FixedArray,append,818.40
+5000,DynamicArray,append,1059.60
+5000,DynamicArray,insert_middle,148.30
+5000,DynamicArray,search,207.60
+
+## Singly vs Doubly Linked List
+size,structure,op,microseconds
+100,Singly,insert_front,105.90
+100,Singly,insert_back,265.90
+100,Doubly,insert_front,207.80
+100,Doubly,insert_back,62.80
+1000,Singly,insert_front,620.00
+1000,Singly,insert_back,9075.90
+1000,Doubly,insert_front,319.60
+1000,Doubly,insert_back,816.10
+5000,Singly,insert_front,1294.70
+5000,Singly,insert_back,223014.30
+5000,Doubly,insert_front,1479.50
+5000,Doubly,insert_back,1419.60
+
+## Hash Table vs Linear List Search
+size,structure,op,microseconds
+100,HashTable,put,174.10
+100,HashTable,get,2.00
+100,List,linear_search,1.30
+100,HashTable,collision_buckets_cap8,8
+1000,HashTable,put,1248.60
+1000,HashTable,get,2.20
+1000,List,linear_search,5.50
+1000,HashTable,collision_buckets_cap8,8
+5000,HashTable,put,5770.00
+5000,HashTable,get,1.50
+5000,List,linear_search,24.40
+5000,HashTable,collision_buckets_cap8,8
+
+## BST: random vs sorted insertion (balance problem)
+size,order,height,search_microseconds
+100,sorted,99,5.40
+100,random,10,0.90
+1000,sorted,999,38.20
+1000,random,20,2.00
+5000,sorted,4999,184.30
+5000,random,28,1.30
